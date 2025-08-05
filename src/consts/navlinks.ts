@@ -1,5 +1,7 @@
+import type { IconType } from "react-icons";
 import type { Drinks } from "../interfaces/cocktail"
 import type { Nav } from "../interfaces/nav.interface"
+import { FaGithubAlt } from "react-icons/fa";
 
 export const navlinks: Nav[] = [
     {
@@ -113,11 +115,11 @@ export const openingHours: Record<string, string>[] = [
 ]
 
 export const socials: {
-    name: string, icon: string, url:string;
+    name: string, icon: IconType, url:string;
 }[] = [
     {
         name: "Github",
-        icon: "",
+        icon: FaGithubAlt,
         url: "github.com/4ssh1"
     }
 ]
