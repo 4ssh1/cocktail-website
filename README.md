@@ -6,6 +6,8 @@ A sleek, animated, and responsive **Cocktail Landing Page** built with **React**
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://greensock.com/gsap/)
+
+
 [![Visitors](https://visitor-badge.laobi.icu/badge?page_id=your-github-username.cocktail-landing)](https://github.com/your-github-username/cocktail-landing)
 
 ---
@@ -32,7 +34,7 @@ Coming soon!
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-github-username/cocktail-landing.git
+git clone https://github.com/4ssh1/cocktail-website.git
 cd cocktail-landing
 
 ```
