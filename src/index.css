@@ -60,15 +60,15 @@
     }
 
     p {
-      @apply font-exo text-3xl -mb-2;
+      @apply text-3xl -mb-2;
     }
-
+    
     a {
       @apply cursor-pointer text-nowrap md:text-base text-sm ;
     }
-
+    
     ul {
-      @apply flex-center lg:gap-12 gap-7;
+      @apply flex justify-center lg:gap-12 gap-7;
     }
   }
 }
@@ -76,25 +76,23 @@
 
 .paytone {
   font-family: "Paytone One", sans-serif;
-  font-weight: 400;
   font-style: normal;
 }
 
 .exo-2 {
   font-family: "Exo 2", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
 
 .noisy {
-  @apply absolute inset-0 size-full bg-[url('/')];
+  @apply absolute inset-0 size-full bg-[url('/background.jpg')];
 }
 
 #hero {
   @apply absolute z-10 min-h-dvh w-full border border-transparent ;
 
   h1 {
-    @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-exo ;
+    @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center  ;
   }
 
   .left-leaf {

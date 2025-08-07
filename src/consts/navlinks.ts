@@ -2,6 +2,7 @@ import type { IconType } from "react-icons";
 import type { Drinks } from "../interfaces/cocktail"
 import type { Nav } from "../interfaces/nav.interface"
 import { FaGithubAlt } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa6";
 
 export const navlinks: Nav[] = [
     {
@@ -121,5 +122,10 @@ export const socials: {
         name: "Github",
         icon: FaGithubAlt,
         url: "github.com/4ssh1"
+    },
+    {
+        name: "Twitter",
+        icon: FaTwitter,
+        url: "x.com/justsa_rah"
     }
 ]
