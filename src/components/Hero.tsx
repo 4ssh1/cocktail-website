@@ -5,9 +5,7 @@ import gsap from "gsap"
 import { useMediaQuery } from "react-responsive"
 
 function Hero() {
-  const videoElementRef = useRef<HTMLVideoElement | null>(null)
-  const timelineRef = useRef<gsap.core.Timeline | null>(null)
-
+  const videoRef = useRef<HTMLVideoElement | null>(null)
   const isMobile = useMediaQuery({ maxWidth: 767 })
   const start = isMobile ? "top 50%" : "center 60%"
   const end = isMobile ? "120% top" : "bottom top"
@@ -46,15 +44,27 @@ function Hero() {
       .to(".left-leaf", { y: 200 }, 0)
       .to(".right-leaf", { y: -200 }, 0)
 
-    timelineRef.current = gsap.timeline({
+    const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: "#hero",
         start,
         end,
         scrub: true,
-        onEnter: () => videoElementRef.current?.play(),
+        onEnter: () => videoRef.current?.play(),
+        pin: true
       },
     })
+
+    videoRef.current?.addEventListener("loadedmetadata", () => {
+      if (videoRef.current) {
+        timeline.to(videoRef.current, {
+          currentTime: videoRef.current.duration,
+        })
+      }
+    })
+
+
+
   }, [])
 
   return (
@@ -90,7 +100,7 @@ function Hero() {
           muted
           playsInline
           preload="auto"
-          ref={videoElementRef}
+          ref={videoRef}
         ></video>
       </div>
     </>
