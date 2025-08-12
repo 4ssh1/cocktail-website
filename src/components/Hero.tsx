@@ -51,7 +51,7 @@ function Hero() {
         end,
         scrub: true,
         onEnter: () => videoRef.current?.play(),
-        pin: true
+        // pin: true
       },
     })
 
@@ -63,13 +63,11 @@ function Hero() {
       }
     })
 
-
-
   }, [])
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero" className="noisy relative">
         <h1 className="title">DURAZNOS</h1>
         <img src="/hero-left-leaf.png" alt="left-leaf" className="left-leaf" />
         <img src="/hero-right-leaf.png" alt="right-leaf" className="right-leaf" />
@@ -92,9 +90,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      </section>
-
-      <div className="video absolute inset-0">
+      <div className="video absolute inset-0 top-20 sm:top-0">
         <video
           src="/output.mp4"
           muted
@@ -103,6 +99,8 @@ function Hero() {
           ref={videoRef}
         ></video>
       </div>
+      </section>
+
     </>
   )
 }

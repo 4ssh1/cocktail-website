@@ -13,7 +13,7 @@ function Navbar() {
 
         navTween.fromTo('nav', {
             backgroundColor: 'transparent'}, {
-            backgroundColor: '#f1e4b931', 
+            backgroundColor: '#00000050', 
             filter: 'blur(0.8px)',
             duration: 1,
             ease: 'power1.inOut'
