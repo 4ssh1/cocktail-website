@@ -46,12 +46,11 @@ function Hero() {
 
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: "#hero",
+        trigger: "video",
         start,
         end,
         scrub: true,
-        onEnter: () => videoRef.current?.play(),
-        // pin: true
+        pin: true
       },
     })
 
@@ -75,14 +74,14 @@ function Hero() {
         <div className="body">
           <div className="content">
             <div className="space-y-5 hidden md:block pl-3">
-              <p className="paytone">Cool. Crisp. Classic</p>
+              <p className="paytone text-xs sm:text-sm">Cool. Crisp. Classic</p>
               <p className="subtitle exo-2">
                 Sip the Spirit <br /> of Summer
               </p>
             </div>
 
-            <div className="view-cocktails">
-              <p className="subtitle exo-2 pb-3">
+            <div className="view-cocktails max-w-4xl flex flex-col">
+              <p className="subtitle exo-2 pb-3 text-wrap text-xs sm:text-sm">
                 Every cocktail on our menu is a blend of premium ingredients,
                 creative flair and timeless recipes- designed to delight your senses
               </p>
@@ -90,9 +89,9 @@ function Hero() {
             </div>
           </div>
         </div>
-      <div className="video absolute inset-0 top-20 sm:top-0">
+      <div className="video absolute inset-0 top-30 sm:top-0">
         <video
-          src="/output.mp4"
+          src="/videos/output.mp4"
           muted
           playsInline
           preload="auto"

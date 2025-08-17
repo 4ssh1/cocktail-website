@@ -71,11 +71,11 @@
     }
 
     p {
-      @apply text-3xl -mb-2;
+      @apply md:text-3xl md:-mb-2;
     }
     
     a {
-      @apply cursor-pointer text-nowrap md:text-base text-sm ;
+      @apply cursor-pointer text-nowrap md:text-base text-xs ;
     }
     
     ul {
@@ -104,17 +104,17 @@
 }
 
 #hero {
-  @apply absolute z-10 min-h-dvh w-full border border-transparent ;
+  @apply z-10 min-h-dvh w-full border border-transparent ;
 
   h1 {
-    @apply md:mt-20 mt-10 text-4xl md:text-[10vw] leading-none text-center  ;
+    @apply md:mt-20 mt-30 text-2xl md:text-[10vw] leading-none text-center  ;
   }
 
   .left-leaf {
-    @apply absolute left-0  md:bottom-auto -bottom-20 md:w-fit w-1/3 ;
+    @apply absolute left-0  md:bottom-auto -bottom-9 md:w-fit w-1/3 ;
   }
 
   .right-leaf {
-    @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24;
+    @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-20 md:w-fit w-24;
   }
 }
