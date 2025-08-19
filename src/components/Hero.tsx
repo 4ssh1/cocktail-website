@@ -7,8 +7,8 @@ import { useMediaQuery } from "react-responsive"
 function Hero() {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const isMobile = useMediaQuery({ maxWidth: 767 })
-  const start = isMobile ? "top 15%" : "top 9%"
-  const end = isMobile ? "100% top" : "bottom top"
+  const start = isMobile ? "top 10%" : "top 10%"
+  const end = isMobile ? "300% top" : "bottom top"
 
   useGSAP(() => {
     const heroSplit = new SplitText(".title", { type: "chars, words" })
@@ -66,7 +66,7 @@ function Hero() {
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero" className="bg">
         <h1 className="title">DURAZNOS</h1>
         <img src="/hero-left-leaf.png" alt="left-leaf" className="left-leaf" />
         <img src="/hero-right-leaf.png" alt="right-leaf" className="right-leaf" />
@@ -89,7 +89,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      <div className="video absolute inset-0 top-0 bg-blend-screen">
+      <div className="video absolute inset-0 top-10 bg-blend-screen">
         <video
           src="/videos/output.mp4"
           muted

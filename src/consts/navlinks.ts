@@ -41,10 +41,22 @@ export const cocktailList: Drinks[] = [
         country: 'AU',
         detail: "Battle",
         price: '₦30k'
+    },
+    {
+        name: "Grey Goose Vodka",
+        country: "FR",
+        detail: "1 L Bottle",
+        price: "₦47k"
     }
 ]
 
 export const mockTailLists: Drinks[] = [
+    {
+        name: "Bols Curaçao Triple Sec",
+        country: "NL",
+        detail: "70 cl Bottle",
+        price: "₦40K"
+    },
     {
         name: "Tropical Bloom",
         country: "US",
