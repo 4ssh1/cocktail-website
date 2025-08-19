@@ -27,7 +27,7 @@ function Navbar() {
             <img src="/drink1.png" alt="logo" width={'30px'} height={'30px'}/><p> Peach Velvet </p>
             </a>
 
-            <ul className="hidden md:block">
+            <ul className="hidden md:flex">
                 {navlinks.map(link=>(
                     <li key={link.id}>
                         <a href={`#${link.id}`}>{link.title}</a>
