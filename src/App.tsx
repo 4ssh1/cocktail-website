@@ -12,7 +12,6 @@ function App() {
     <main >
       <Navbar />
       <Hero />
-      <div className="bg-red-900 w-full z-10 h-[10vh]"></div>
       <Cocktails />
     </main>
   )
