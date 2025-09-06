@@ -7,8 +7,8 @@ import { useMediaQuery } from "react-responsive"
 function Hero() {
   const videoRef = useRef<HTMLVideoElement | null>(null)
   const isMobile = useMediaQuery({ maxWidth: 767 })
-  const start = isMobile ? "top 10%" : "top 10%"
-  const end = isMobile ? "300% top" : "bottom top"
+  const start = isMobile ? "top 35%" : "top 10%"
+  const end = isMobile ? "150% top" : "bottom top"
 
   useGSAP(() => {
     const heroSplit = new SplitText(".title", { type: "chars, words" })
@@ -73,7 +73,7 @@ function Hero() {
 
         <div className="body">
           <div className="content">
-            <div className="space-y-5 hidden md:block pl-3">
+            <div className="space-y-5 pl-3 mt-20 sm:mt-0">
               <p className="paytone text-xs sm:text-sm">Cool. Crisp. Classic</p>
               <p className="subtitle exo-2">
                 Sip the Spirit <br /> of Summer
@@ -81,7 +81,7 @@ function Hero() {
             </div>
 
             <div className="view-cocktails max-w-4xl flex flex-col">
-              <p className="subtitle exo-2 pb-3 text-wrap break-word whitespace-normal text-xs sm:text-sm">
+              <p className="subtitle exo-2 pb-3 text-wrap break-word whitespace-normal leading-5 sm:leading-5 text-xs sm:text-sm">
                 Every cocktail on our menu is a blend of premium ingredients,
                 creative flair and timeless recipes- designed to delight your senses
               </p>
@@ -89,7 +89,7 @@ function Hero() {
             </div>
           </div>
         </div>
-      <div className="video absolute inset-0 top-10 bg-blend-screen">
+      <div className="video absolute inset-0 top-10 w-full bg-blend-screen">
         <video
           src="/videos/output.mp4"
           muted

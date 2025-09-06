@@ -38,10 +38,10 @@ const Cocktails = () => {
                   {cocktailList.map((drink)=>(
                       <li key={drink.name} className="flex  items-center border-b-2">
                           <div className="md:me-28 w-[230px] ">
-                              <h3 className="py-3 ">{drink.name}</h3>
-                              <p>{drink.country} | {drink.detail} </p>
+                              <h3 className="py-3 text-sm md:text-[16px]">{drink.name}</h3>
+                              <p className="text-xs md:text-sm">{drink.country} | {drink.detail} </p>
                           </div>
-                          <div>- {drink.price}</div>
+                          <div className="text-sm md:text-[16px]">- {drink.price}</div>
                       </li>
                   ))}
                </ul>
@@ -52,17 +52,17 @@ const Cocktails = () => {
                   {mockTailLists.map((drink)=>(
                       <li key={drink.name} className="flex items-center border-b-2">
                           <div className="md:me-28 w-[230px]">
-                              <h3 className="py-3">{drink.name} </h3>
-                              <p> {drink.country} | {drink.detail} </p>
+                              <h3 className="py-3 text-sm md:text-[16px]">{drink.name} </h3>
+                              <p className="text-xs md:text-sm"> {drink.country} | {drink.detail} </p>
                           </div>
-                          <div>- {drink.price}</div>
+                          <div className="text-sm md:text-[16px]">- {drink.price}</div>
                       </li>
                   ))}
                </ul>
           </div>
         </div>
         <div className="flex justify-between items-center w-full overflow-hidden">
-          <img src="/hero-left-leaf.png" alt="leaf" className="md:w-fit " id="left"/>
+          <img src="/hero-left-leaf.png" alt="leaf" className="md:w-fit w-45" id="left"/>
           <img src="/hero-right-leaf.png" alt="leaf" className="md:w-fit " id="right"/> 
         </div>
       </section>
