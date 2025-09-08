@@ -6,7 +6,7 @@ import { useMediaQuery } from "react-responsive"
 
 function Hero() {
   const videoRef = useRef<HTMLVideoElement | null>(null)
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   const start = isMobile ? "top 35%" : "top 10%"
   const end = isMobile ? "150% top" : "bottom top"
 
@@ -75,7 +75,7 @@ function Hero() {
           <div className="content">
             <div className="space-y-5 pl-3 mt-20 sm:mt-0">
               <p className="paytone text-xs sm:text-sm">Cool. Crisp. Classic</p>
-              <p className="subtitle exo-2">
+              <p className="subtitle exo-2 text-yellow-300">
                 Sip the Spirit <br /> of Summer
               </p>
             </div>
@@ -85,7 +85,7 @@ function Hero() {
                 Every cocktail on our menu is a blend of premium ingredients,
                 creative flair and timeless recipes- designed to delight your senses
               </p>
-              <a href="#cocktails exo-2">View Cocktails</a>
+              <a href="#cocktails" className="exo-2 text-amber-400">View Cocktails</a>
             </div>
           </div>
         </div>

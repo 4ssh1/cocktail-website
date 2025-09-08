@@ -31,13 +31,13 @@ const Cocktails = () => {
 
   return (
       <section className="bg ">
-        <div className="list flex justify-between px-2 flex-col md:flex-row md:pt-35 pt-30">
+        <div className="list flex justify-between px-2 flex-col lg:flex-row lg:pt-35 pt-30">
           <div className="popular">
-               <h2 className="md:text-2xl">Most popular cocktails</h2>
+               <h2 className="md:text-2xl text-center lg:text-start pb-2 ">Most popular cocktails</h2>
                <ul>
                   {cocktailList.map((drink)=>(
-                      <li key={drink.name} className="flex  items-center border-b-2">
-                          <div className="md:me-28 w-[230px] ">
+                      <li key={drink.name} className="flex justify-end lg:justify-start items-center lg:border-b-2">
+                          <div className="md:me-28 w-[230px] border-b-2 lg:border-b-0">
                               <h3 className="py-3 text-sm md:text-[16px]">{drink.name}</h3>
                               <p className="text-xs md:text-sm">{drink.country} | {drink.detail} </p>
                           </div>
@@ -46,12 +46,12 @@ const Cocktails = () => {
                   ))}
                </ul>
           </div>
-          <div className="loved pt-16 md:pt-0">
+          <div className="loved pt-16 lg:pt-0">
                <h2 className="md:text-2xl">Most loved mocktails</h2>
                <ul>
                   {mockTailLists.map((drink)=>(
-                      <li key={drink.name} className="flex items-center border-b-2">
-                          <div className="md:me-28 w-[230px]">
+                      <li key={drink.name} className="flex items-center lg:border-b-2">
+                          <div className="md:me-28 w-[230px] border-b-2 lg:border-b-0">
                               <h3 className="py-3 text-sm md:text-[16px]">{drink.name} </h3>
                               <p className="text-xs md:text-sm"> {drink.country} | {drink.detail} </p>
                           </div>
