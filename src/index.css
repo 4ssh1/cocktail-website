@@ -54,6 +54,9 @@
 .video {
   @apply w-full h-dvh object-cover flex justify-center ;
 }
+.text {
+  color: var(--color-yellow)
+}
 }
 
 @layer components {

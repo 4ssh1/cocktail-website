@@ -75,7 +75,7 @@ function Hero() {
           <div className="content">
             <div className="space-y-5 pl-3 mt-20 sm:mt-0">
               <p className="paytone text-xs sm:text-sm">Cool. Crisp. Classic</p>
-              <p className="subtitle exo-2 text-yellow-300">
+              <p className="subtitle exo-2 text">
                 Sip the Spirit <br /> of Summer
               </p>
             </div>
@@ -85,7 +85,7 @@ function Hero() {
                 Every cocktail on our menu is a blend of premium ingredients,
                 creative flair and timeless recipes- designed to delight your senses
               </p>
-              <a href="#cocktails" className="exo-2 text-amber-400">View Cocktails</a>
+              <a href="#cocktails" className="exo-2 text">View Cocktails</a>
             </div>
           </div>
         </div>
