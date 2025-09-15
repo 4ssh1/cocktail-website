@@ -33,13 +33,13 @@ const Cocktails = () => {
       <section className="bg ">
         <div className="list flex justify-between px-2 flex-col lg:flex-row lg:pt-35 pt-30">
           <div className="popular">
-               <h2 className="md:text-2xl text-center lg:text-start pb-2 text-red-600">Most popular cocktails</h2>
+               <h2 className="md:text-2xl text-center md:text-end lg:text-start pb-2 text-red-600">Most popular cocktails</h2>
                <ul>
                   {cocktailList.map((drink)=>(
                       <li key={drink.name} className="flex justify-end lg:justify-start items-center lg:border-b-2">
                           <div className="md:me-28 w-[230px] border-b-2 lg:border-b-0">
                               <h3 className="py-3 text-sm md:text-[16px]">{drink.name}</h3>
-                              <p className="text-xs md:text-sm">{drink.country} | {drink.detail} </p>
+                              <p className="text-xs md:text-sm italic">{drink.country} <span className="text-black border-[1px] border-white mx-2 rounded-2xl"> | </span> {drink.detail} </p>
                           </div>
                           <div className="text-sm md:text-[16px] text-red-700 bg-white rounded-2xl px-2">- {drink.price}</div>
                       </li>
@@ -53,9 +53,9 @@ const Cocktails = () => {
                       <li key={drink.name} className="flex items-center lg:border-b-2">
                           <div className="md:me-28 w-[230px] border-b-2 lg:border-b-0">
                               <h3 className="py-3 text-sm md:text-[16px]">{drink.name} </h3>
-                              <p className="text-xs md:text-sm"> {drink.country} | {drink.detail} </p>
+                              <p className="text-xs md:text-sm italic"> {drink.country} <span className="text-black border-[1px] border-white mx-2 rounded-2xl"> | </span> {drink.detail} </p>
                           </div>
-                          <div className="text-sm md:text-[16px] text-red-700 bg-white rounded-2xl px-2">- {drink.price}</div>
+                          <div className="text-sm md:text-[16px] text-red-700 bg-white rounded-2xl px-2 ">- {drink.price}</div>
                       </li>
                   ))}
                </ul>

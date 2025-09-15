@@ -27,7 +27,7 @@ export const cocktailList: Drinks[] = [
     {
         name: "Chapel Hill Shiraz",
         country: 'AU',
-        detail: "Battle",
+        detail: "Bottle",
         price: '₦10k'
     },
     {
@@ -39,7 +39,7 @@ export const cocktailList: Drinks[] = [
     {
         name: "Caten Malbee",
         country: 'AU',
-        detail: "Battle",
+        detail: "Bottle",
         price: '₦30k'
     },
     {
@@ -60,13 +60,13 @@ export const mockTailLists: Drinks[] = [
     {
         name: "Tropical Bloom",
         country: "US",
-        detail: "Battle",
+        detail: "Bottle",
         price: "₦60k"
     },
     {
         name: "Passionfruit Mint",
         country: "US",
-        detail: "Battle",
+        detail: "Bottle",
         price: "₦50k"
     },
     {
