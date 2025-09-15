@@ -33,7 +33,7 @@ const Cocktails = () => {
       <section className="bg ">
         <div className="list flex justify-between px-2 flex-col lg:flex-row lg:pt-35 pt-30">
           <div className="popular">
-               <h2 className="md:text-2xl text-center lg:text-start pb-2 ">Most popular cocktails</h2>
+               <h2 className="md:text-2xl text-center lg:text-start pb-2 text-red-600">Most popular cocktails</h2>
                <ul>
                   {cocktailList.map((drink)=>(
                       <li key={drink.name} className="flex justify-end lg:justify-start items-center lg:border-b-2">
@@ -41,13 +41,13 @@ const Cocktails = () => {
                               <h3 className="py-3 text-sm md:text-[16px]">{drink.name}</h3>
                               <p className="text-xs md:text-sm">{drink.country} | {drink.detail} </p>
                           </div>
-                          <div className="text-sm md:text-[16px]">- {drink.price}</div>
+                          <div className="text-sm md:text-[16px] text-red-700 bg-white rounded-2xl px-2">- {drink.price}</div>
                       </li>
                   ))}
                </ul>
           </div>
           <div className="loved pt-16 lg:pt-0">
-               <h2 className="md:text-2xl">Most loved mocktails</h2>
+               <h2 className="md:text-2xl text-amber-500">Most loved mocktails</h2>
                <ul>
                   {mockTailLists.map((drink)=>(
                       <li key={drink.name} className="flex items-center lg:border-b-2">
@@ -55,7 +55,7 @@ const Cocktails = () => {
                               <h3 className="py-3 text-sm md:text-[16px]">{drink.name} </h3>
                               <p className="text-xs md:text-sm"> {drink.country} | {drink.detail} </p>
                           </div>
-                          <div className="text-sm md:text-[16px]">- {drink.price}</div>
+                          <div className="text-sm md:text-[16px] text-red-700 bg-white rounded-2xl px-2">- {drink.price}</div>
                       </li>
                   ))}
                </ul>

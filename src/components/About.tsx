@@ -35,14 +35,14 @@ const About = () => {
         <div className="bg-black absolute top-0 right-0 opacity-80"></div>
         <div className="content">
             <div className="md:col-span-8 pt-10">
-                <p className="badge exo-2 bg-white py-1 px-2.5 rounded-2xl inline text-black text-xs sm:text-sm">Best Cocktails</p>
+                <p className="badge exo-2 bg-white py-1 px-2.5 rounded-2xl inline text-green-600 text-xs sm:text-sm">Best Cocktails</p>
                 <h1 className="paytone pt-5 text-3xl pb-2">Where every details matters <span className="text-white">- </span>
                     from muddle to garnish
                 </h1>
             </div>
             <div>
               <p className="text text-[15px] italic">
-                Every cocktail we serve is a reflection of our obsession with detail - from the first muddle to the final garnish. That care is what turns a simple drink into something truly memorable
+                Every cocktail we serve is a reflection of our obsession with detail - from the first muddle to the final garnish. <br /> That care is what turns a simple drink into something truly memorable
               </p>
 
               <div>
