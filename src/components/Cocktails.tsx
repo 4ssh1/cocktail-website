@@ -1,8 +1,8 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 // import { useMediaQuery } from "react-responsive"
-import { cocktailList } from "../consts/navlinks"
-import {mockTailLists} from '../consts/navlinks'
+import { cocktailList } from "../consts"
+import {mockTailLists} from '../consts'
 
 const Cocktails = () => {
   // const isMobile = useMediaQuery({ maxWidth: 767 })
@@ -30,7 +30,7 @@ const Cocktails = () => {
 
 
   return (
-      <section className="bg ">
+      <section className="bg" id="cocktails">
         <div className="list flex justify-between px-2 flex-col lg:flex-row lg:pt-35 pt-30">
           <div className="popular">
                <h2 className="md:text-2xl text-center md:text-end lg:text-start pb-2 text-red-600">Most popular cocktails</h2>

@@ -41,7 +41,7 @@
   }
 
   .masked-img {
-    mask-image: url('/under-img.jpg');
+    mask-image: url('/drink-3.jpg');
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 50%;
@@ -120,3 +120,5 @@
     @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-20 md:w-fit w-24;
   }
 }
+
+

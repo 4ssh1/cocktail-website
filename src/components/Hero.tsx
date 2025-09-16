@@ -80,12 +80,12 @@ function Hero() {
               </p>
             </div>
 
-            <div className="view-cocktails max-w-4xl flex flex-col">
+            <div className="view-cocktails max-w-4xl flex flex-col pr-5">
               <p className="subtitle exo-2 pb-3 text-wrap break-word whitespace-normal leading-5 sm:leading-5 text-xs sm:text-sm">
                 Every cocktail on our menu is a blend of premium ingredients,
                 creative flair and timeless recipes- designed to delight your senses
               </p>
-              <a href="#cocktails" className="exo-2 text">View Cocktails</a>
+              <a href="#cocktails" className="exo-2 text z-10 hover:text-green-500 ease-in-out delay-200 w-fit ">View Cocktails</a>
             </div>
           </div>
         </div>
