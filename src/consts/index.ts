@@ -141,3 +141,34 @@ export const socials: {
         url: "x.com/justsa_rah"
     }
 ]
+
+export const sliderLists = [
+    {
+        id: 1,
+        name: "Voilet Breeze",
+        image: '/drink-1.jpg',
+        title: "Simple ingredient, Bold Flavor",
+        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+    },
+    {
+        id: 2,
+        name: "Raspberry Mojito",
+        image: '/drink-2.jpg',
+        title: "A Zesty Classic That Never Fails",
+        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+    },
+    {
+        id: 3,
+        name: "Classic Mojito",
+        image: '/drink-3.jpg',
+        title: "Simple ingredient, Bold Flavor",
+        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+    },
+    {
+        id: 4,
+        name: "Curacao Mojito",
+        image: '/drink-4.jpg',
+        title: "Crafted With Care, Poured With Love",
+        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+    }
+]

@@ -26,7 +26,7 @@
   }
 
   .abs-center {
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    @apply absolute top-50 left-1/2 -translate-x-1/2 -translate-y-1/2;
   }
 
   .text-gradient {
@@ -37,14 +37,14 @@
   }
 
   .radial-gradient {
-    background: radial-gradient(circle at center, #434343 0%, #000 50%, transparent 100%);
+    background: radial-gradient(circle at center, #b3afaf 0%, #000 50%, transparent 100%);
+    opacity: 0.6;
   }
 
   .masked-img {
-    mask-image: url('/drink-3.jpg');
+    mask-image: url('/mask.png');
     mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 50%;
+    mask-size: cover;
   }
 
   .view-cocktails {
