@@ -14,7 +14,7 @@ export const navlinks: Nav[] = [
         title: 'About us'
     },
     {
-        id: 'work',
+        id: 'art',
         title: 'The Art'
     },
     {
