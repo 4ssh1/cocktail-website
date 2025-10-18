@@ -105,10 +105,10 @@ export const goodLists: string[] = [
 
 export const storeInfo = {
     heading: 'Where to find us',
-    address: "41 Que Ave, Los Angele, CA",
+    address: "123 Cocktail Lane, Mixology City, Lagos",
     contact: {
-        phone: "(213) 832-72622",
-        email: 'cocktails@serve.com'
+        phone: "(234) 832 726 220",
+        email: 'hello@cocktail.com'
     }
 }
 
