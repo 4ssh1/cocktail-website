@@ -21,13 +21,13 @@ const Art = () => {
 	
 	maskTimeline
 	 .to('.will-fade', { opacity: 0, stagger: 0.2, ease: 'power1.inOut', })
-	 .to('.masked-img', { scale: 1.3, maskPosition: 'center', maskSize: '400%', duration: 1, ease: 'power1.inOut '})
+	 .to('.masked-img', { scale: 1.3, maskPosition: 'center', maskSize: '70%', duration: 0.5, ease: 'power1.inOut', opacity: 0.7 }, '-=1')
 	 .to('#masked-content', { opacity: 1, duration: 1, ease: 'power1.inOut'})
  })
  
  return (
 	<div id="art">
-	 <div className="container mx-auto h-full pt-20">
+	 <div className="container mx-auto h-full">
 		<h2 className="will-fade">The ART</h2>
 		
 		<div className="content">
@@ -39,11 +39,11 @@ const Art = () => {
 			))}
 		 </ul>
 		 
-		 <div className="cocktail-img border-2">
+		 <div className="cocktail-img mt-5">
 			<img
 				src="/under-img.jpg"
 				alt="cocktail"
-				className="abs-center masked-img size-full object-contain"
+				className="abs-center masked-img size-full object-contain mt-5"
 			/>
 		 </div>
 		 

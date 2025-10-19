@@ -122,7 +122,7 @@
 }
 
 #art {
-  @apply  flex-col min-h-dvh p-5 mt-20 relative bg-radial; 
+  @apply  flex-col min-h-dvh p-5 mt-10 relative bg-radial; 
 
   h2 {
     @apply relative md:text-[20vw] text-8xl text-nowrap leading-none  text-center text-[#505050] mb-8;
