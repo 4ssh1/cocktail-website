@@ -44,12 +44,10 @@ function Menu() {
             <div className="arrow">
                 <button className="text-left" onClick={()=> goToSlide(currIndex - 1)}>
                     <span>{prevCocktail.name}</span>
-                    <img src="" alt="" />
                 </button>
 
                 <button className="text-right" onClick={()=> goToSlide(currIndex + 1)}>
                     <span>{nextCocktail.name}</span>
-                    <img src="" alt="" />
                 </button>
             </div>
         </div>

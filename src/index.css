@@ -44,7 +44,8 @@
   .masked-img {
     mask-image: url('/mask.png');
     mask-repeat: no-repeat;
-    mask-size: cover;
+    mask-size: 50%;
+    mask-position: center;
   }
 
   .view-cocktails {
