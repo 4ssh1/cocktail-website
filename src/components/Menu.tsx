@@ -47,14 +47,18 @@ function Menu() {
                 {/* <div className="arrow">
 
                 </div> */}
-                <div className="flex justify-between items-start w-full">
+                <div className="flex justify-between  w-full">
 
-                    <div className="" >
-                        <span className="w-40 inline-block">{prevCocktail.name}</span>
-                        <img src="/left-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white p-2 mt-5 cursor-pointer" onClick={() => goToSlide(currIndex - 1)}/>
+                    <div className="flex-col border px-3" >
+                        <div>
+                            <span className="w-40 inline-block">{prevCocktail.name}</span>
+                            <img src="/left-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white p-2 mt-5 cursor-pointer" onClick={() => goToSlide(currIndex - 1)}/>
+                        </div>
+
+                        <div className="items-end">Recipes for <br /> {currentCocktail.name}</div>
                     </div>
 
-                    <div className=" w-full border">
+                    <div className="w-96 h-96 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden shadow-lg">
                         <img src={currentCocktail.image} className="object-cover w-full size-full" alt="img" />
                     </div>
                     <div className="justify-items-end" >
