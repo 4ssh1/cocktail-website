@@ -20,9 +20,9 @@ function Menu() {
 
   return (
     <section id="menu" aria-labelledby="menu-heading">
-      <div className="flex justify-between">
-          <img src="/hero-left-leaf.png" alt="left-leaf" id="m-left-leaf" />
-          <img src="/hero-right-leaf.png" alt="right-leaf" id="m-right-leaf" />
+      <div className="flex justify-between items-center">
+          <img src="/hero-left-leaf.png" alt="left-leaf" id="mi-left-leaf" className="w-48" />
+          <img src="/hero-right-leaf.png" alt="right-leaf" id="mi-right-leaf" className="w-48"/>
       </div>
 
       <h2 id="menu-heading" className="sr-only"> Cocktail Menu</h2>

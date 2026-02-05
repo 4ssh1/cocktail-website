@@ -41,25 +41,25 @@ const Art = () => {
 	return (
 		<div id="art">
 			<h2 className="will-fade">The ART</h2>
-			<div className="mt-10">
+			<div className="sm:mt-10">
 				<div className="content">
-					<ul className="space-y-4 will-fade hidden md:block">
+					<ul className="space-y-4 will-fade mt-10">
 						{goodLists.map((feature, index) => (
-							<li key={index} className="flex items-center gap-2">
+							<li key={index} className="md:flex items-center gap-2 hidden">
 								<p>{feature}</p>
 							</li>
 						))}
 					</ul>
 
-					<div className="cocktail-img relative mt-50">
+					<div className="cocktail-img relative mt-10 sm:mt-50">
 						<img
 							src="/under-img.jpg"
 							alt="cocktail"
-							className="abs-center masked-img size-[50%] md:size-full object-contain mt-5"
+							className="abs-center masked-img size-full object-contain mt-5"
 						/>
 					</div>
 
-					<ul className="space-y-4 will-fade hidden md:block">
+					<ul className="space-y-2 mt-20 md:space-y-4 will-fade">
 						{featureLists.map((feature, index) => (
 							<li key={index} className="flex items-center justify-start gap-2">
 								<p className="md:w-fit w-60">{feature}</p>
@@ -71,8 +71,8 @@ const Art = () => {
 				<div className="masked-container">
 					<h2 className="will-fade">Sip-Worthy Perfection</h2>
 					<div id="masked-content">
-						<h3 className='backdrop-blur-[5px] backdrop-brightness-100'>Made with Craft, Poured with Passion</h3>
-						<p className='backdrop-blur-[3px] backdrop-brightness-100'>This isn’t just a drink. It’s a carefully crafted moment made just for you.</p>
+						<h3>Made with Craft, Poured with Passion</h3>
+						<p>This isn’t just a drink. It’s a carefully crafted moment made just for you.</p>
 					</div>
 				</div>
 			</div>
