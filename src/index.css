@@ -192,15 +192,16 @@
   }
 
   .recipe {
-    @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
+    @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full bottom-0;
 
       .info {
         @apply space-y-4 lg:translate-y-20;
 
-          #title {
-            @apply md:text-6xl text-3xl max-w-40;
-          }
       }
+
+       #title {
+            @apply md:text-6xl text-3xl ;
+          }
 
     .details {
       @apply space-y-5 md:max-w-md text-left;

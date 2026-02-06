@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { sliderLists } from "../consts"
 
 function Menu() {
     const [currIndex, setCurrIndex] = useState(0)
     const allCocktails = sliderLists.length
+    const contentRef = useRef<HTMLDivElement>(null)
 
     const goToSlide = (ind: number) => {
         const newInd = (ind + allCocktails) % allCocktails
@@ -44,30 +45,34 @@ function Menu() {
             </div>
 
             <div className="content mt-20 sm:mt-30 px-3">
-                {/* <div className="arrow">
-
-                </div> */}
                 <div className="flex justify-between  w-full">
 
-                    <div className="flex-col border px-3" >
+                    <div className="flex-col px-3" >
                         <div>
                             <span className="w-40 inline-block">{prevCocktail.name}</span>
-                            <img src="/left-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white p-2 mt-5 cursor-pointer" onClick={() => goToSlide(currIndex - 1)}/>
+                            <img src="/left-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white p-2 mt-5 cursor-pointer" onClick={() => goToSlide(currIndex - 1)} />
                         </div>
-
-                        <div className="items-end">Recipes for <br /> {currentCocktail.name}</div>
                     </div>
 
-                    <div className="w-96 h-96 md:w-[32rem] md:h-[32rem] rounded-full overflow-hidden shadow-lg">
-                        <img src={currentCocktail.image} className="object-cover w-full size-full" alt="img" />
+                    <div className="w-56 h-56 md:size-86 rounded-full overflow-hidden shadow-lg">
+                        <img src={currentCocktail.image} className="object-cover size-full" alt="img" />
                     </div>
                     <div className="justify-items-end" >
                         <span className="w-40 inline-block text-end">{nextCocktail.name}</span >
-                         <img src="/right-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white mt-5 cursor-pointer" onClick={() => goToSlide(currIndex + 1)}/>
+                        <img src="/right-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white mt-5 cursor-pointer" onClick={() => goToSlide(currIndex + 1)} />
                     </div>
                 </div>
             </div>
-
+            <div className="recipe">
+                <div className="title" ref={contentRef}>
+                    <p>Recipes for: </p>
+                    <p id="title">{currentCocktail.name}</p>
+                </div>
+                <div className="details">
+                    <h2>{currentCocktail.title}</h2>
+                    <p>{currentCocktail.description}</p>
+                </div>
+            </div>
 
         </section>
     )
