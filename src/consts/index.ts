@@ -148,27 +148,27 @@ export const sliderLists = [
         name: "Voilet Breeze",
         image: '/drink-1.jpg',
         title: "Simple ingredient, Bold Flavor",
-        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+        description: "A refreshing blend of floral notes and citrus, perfect for a summer evening."
     },
     {
         id: 2,
         name: "Raspberry Mojito",
         image: '/drink-2.jpg',
         title: "A Zesty Classic That Never Fails",
-        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+        description: "Sweet raspberries and fresh mint come together for a vibrant, tangy twist on a classic."
     },
     {
         id: 3,
         name: "Classic Mojito",
         image: '/drink-3.jpg',
         title: "Simple ingredient, Bold Flavor",
-        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+        description: "A timeless favorite, bursting with lime and mint, delivering crisp refreshment in every sip."
     },
     {
         id: 4,
         name: "Curacao Mojito",
         image: '/drink-4.jpg',
         title: "Crafted With Care, Poured With Love",
-        description: "Made with tequila and orange liqueur, the Margarita is easy to make and full of character"
+        description: "Exotic blue curaçao and muddled herbs create a visually stunning and deliciously unique cocktail."
     }
 ]
