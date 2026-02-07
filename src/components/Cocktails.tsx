@@ -61,9 +61,9 @@ const Cocktails = () => {
                </ul>
           </div>
         </div>
-        <div className="flex justify-between items-center w-full overflow-hidden">
-          <img src="/hero-left-leaf.png" alt="leaf" className="md:w-fit w-45" id="left"/>
-          <img src="/hero-right-leaf.png" alt="leaf" className="md:w-fit " id="right"/> 
+        <div className="flex justify-between items-center w-full overflow-hidden border">
+          <img src="/hero-left-leaf.png" alt="leaf" className="md:w-fit w-2/5" id="left"/>
+          <img src="/hero-right-leaf.png" alt="leaf" className="md:w-fit w-3/5" id="right"/> 
         </div>
       </section>
   )

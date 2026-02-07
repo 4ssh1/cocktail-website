@@ -110,7 +110,7 @@
   @apply z-10 min-h-dvh w-full border border-transparent ;
 
   h1 {
-    @apply mt-20 text-4xl md:text-[10vw] leading-none text-center  ;
+    @apply mt-20 text-4xl md:text-[10vw] leading-none text-center ;
   }
 
   .left-leaf {

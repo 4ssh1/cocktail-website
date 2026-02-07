@@ -37,7 +37,7 @@ function Menu() {
                 <img src="/hero-right-leaf.png" alt="right-leaf" id="mi-right-leaf" className="w-48" />
             </div>
 
-            <h2 id="menu-heading" className="text-center text-4xl sm:text-7xl mb-8 color"> Cocktail Menu</h2>
+            <h2 id="menu-heading" className="text-center text-4xl sm:text-7xl mb-8 text"> Cocktail Menu</h2>
 
             <div className="flex justify-between items-center gap-6">
                 {sliderLists.map((cocktail, index) => {
@@ -61,7 +61,7 @@ function Menu() {
                     <div className="flex-col px-1.5 md:px-3" >
                         <div>
                             <span className="md:w-40 inline-block text-[11px] w-20 md:text-[16px] text-nowrap">{prevCocktail.name}</span>
-                            <img src="/left-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-white p-2 mt-5 cursor-pointer" onClick={() => goToSlide(currIndex - 1)} />
+                            <img src="/left-arr.png" alt="arrow" className="md:size-20 size-10 rounded-full bg-green-600 p-2 mt-5 cursor-pointer" onClick={() => goToSlide(currIndex - 1)} />
                         </div>
                     </div>
 
@@ -77,7 +77,7 @@ function Menu() {
             <div className="recipe">
                 <div className="info" ref={contentRef}>
                     <p>Recipes for: </p>
-                    <p id="title">{currentCocktail.name}</p>
+                    <p id="title" className="text">{currentCocktail.name}</p>
                 </div>
                 <div className="details">
                     <h2>{currentCocktail.title}</h2>
