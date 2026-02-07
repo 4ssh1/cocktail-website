@@ -23,9 +23,8 @@ A sleek, animated, and responsive **Cocktail Landing Page** built with **React**
 
 ---
 
-## 📸 Screenshots
 
-Coming soon!
+<img width="1877" height="950" alt="Screenshot 2026-02-07 230328" src="https://github.com/user-attachments/assets/1e63d0cb-b313-4f61-9422-394c0782f2de" />
 
 ---
 
@@ -35,7 +34,7 @@ Coming soon!
 
 ```bash
 git clone https://github.com/4ssh1/cocktail-website.git
-cd cocktail-landing
+cd cocktail-website
 
 ```
 
